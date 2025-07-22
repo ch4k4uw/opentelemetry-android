@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## Version 0.13.0l (2025-07-22)
+
+- Decreased kotlin version to 1.9.0.
+
 ## Version 0.12.0 (2025-07-08)
 
 ### 🌟 New instrumentation

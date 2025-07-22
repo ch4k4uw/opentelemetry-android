@@ -9,12 +9,12 @@ junit = "5.13.3"
 byteBuddy = "1.17.6"
 okhttp = "5.1.0"
 spotless = "7.2.0"
-kotlin = "2.2.0"
+kotlin = "1.9.0"
 androidPlugin = "8.11.1"
 junitKtx = "1.2.1"
 autoService = "1.1.1"
-androidx-navigation = "2.7.7"
-compose = "1.5.4"
+androidx-navigation = "2.6.0"
+compose = "1.4.3"
 
 [libraries]
 opentelemetry-platform-alpha = { module = "io.opentelemetry.instrumentation:opentelemetry-instrumentation-bom-alpha", version.ref = "opentelemetry-instrumentation-alpha" }
@@ -22,9 +22,9 @@ opentelemetry-platform = { module = "io.opentelemetry.instrumentation:openteleme
 opentelemetry-core-bom = { module = "io.opentelemetry:opentelemetry-bom" }
 androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "androidx-navigation" }
 androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "androidx-navigation" }
-androidx-core = "androidx.core:core:1.16.0"
+androidx-core = "androidx.core:core:1.14.0-alpha01"
 androidx-annotation = "androidx.annotation:annotation:1.9.1"
-androidx-lifecycle-process = "androidx.lifecycle:lifecycle-process:2.9.2"
+androidx-lifecycle-process = "androidx.lifecycle:lifecycle-process:2.8.3"
 androidx-preference-ktx = "androidx.preference:preference-ktx:1.2.1"
 findbugs-jsr305 = "com.google.code.findbugs:jsr305:3.0.2"
 byteBuddy = { module = "net.bytebuddy:byte-buddy", version.ref = "byteBuddy" }
@@ -56,7 +56,7 @@ androidx-test-runner = "androidx.test:runner:1.6.2"
 androidx-junit = "androidx.test.ext:junit:1.2.1"
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
 mockito-junit-jupiter = { module = "org.mockito:mockito-junit-jupiter", version.ref = "mockito" }
-mockk = "io.mockk:mockk:1.14.5"
+mockk = "io.mockk:mockk:1.13.7"
 junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
 junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
 junit-vintage-engine = { module = "org.junit.vintage:junit-vintage-engine", version.ref = "junit" }

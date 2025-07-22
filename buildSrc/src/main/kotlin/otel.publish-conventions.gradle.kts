@@ -8,6 +8,7 @@ plugins {
 version = project.version.toString().replaceFirst("(-SNAPSHOT)?$".toRegex(), "-alpha$1")
 
 val isARelease = System.getenv("CI") != null
+val isLocal = System.getenv("LOCAL") != null
 
 val android = extensions.findByType(LibraryExtension::class.java)
 
@@ -17,7 +18,7 @@ if (android != null) {
         singleVariant(androidVariantToRelease) {
 
             // Adding sources and javadoc artifacts only during a release.
-            if (isARelease) {
+            if (isARelease || isLocal) {
                 withJavadocJar()
                 withSourcesJar()
             }
@@ -25,7 +26,7 @@ if (android != null) {
     }
 } else {
     extensions.findByType(JavaPluginExtension::class.java)?.apply {
-        if (isARelease) {
+        if (isARelease || isLocal) {
             withJavadocJar()
             withSourcesJar()
         }

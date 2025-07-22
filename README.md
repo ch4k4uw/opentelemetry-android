@@ -5,6 +5,10 @@
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/open-telemetry/opentelemetry-android/badge)](https://scorecard.dev/viewer/?uri=github.com/open-telemetry/opentelemetry-android)
 [![android api](https://img.shields.io/badge/Android_API-21-green.svg "Android min API 21")](VERSIONING.md)
 
+## Fork disclaimer
+This fork was made to decrease the Kotlin version to 1.9.0, allowing for the reduction of other AndroidX libraries.
+The main goal is to use the compile SDK 34 for some legacy apps, making their migration to newer Android versions slower.
+
 ## Status: development
 
 * [About](#about)

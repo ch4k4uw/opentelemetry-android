@@ -5,7 +5,6 @@ import java.util.Properties
 plugins {
     alias(rootLibs.plugins.androidApp)
     alias(libs.plugins.kotlinAndroid)
-    alias(libs.plugins.compose.compiler)
 }
 
 val localProperties = Properties()
@@ -13,7 +12,7 @@ localProperties.load(FileInputStream(rootProject.file("local.properties")))
 
 android {
     namespace = "io.opentelemetry.android.demo"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "io.opentelemetry.android.demo"
@@ -40,6 +39,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        compose = true
     }
     val javaVersion = JavaVersion.VERSION_11
     compileOptions {
@@ -52,6 +52,10 @@ android {
         compilerOptions {
             jvmTarget.set(JvmTarget.JVM_11)
         }
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.0"
     }
 }
 
